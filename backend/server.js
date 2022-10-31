@@ -33,5 +33,5 @@ app.use(notFound)
 app.use(errorHandler)
 
 
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 80;
 app.listen(PORT, console.log(`server started on port ${PORT}`));
