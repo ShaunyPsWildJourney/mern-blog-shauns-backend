@@ -10,9 +10,11 @@ const app = express();
 dotenv.config();
 connectDB();
 
-const allowedOrigins = [
-  'http://localhost:80',
-  'https://starlit-chebakia-3aae3a.netlify.app/'];
+const allowedOrigins = '*'
+// [
+  
+//   'http://localhost:80',
+//   'https://starlit-chebakia-3aae3a.netlify.app/'];
 const options = {
   origin: allowedOrigins
 }
