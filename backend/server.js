@@ -10,7 +10,9 @@ const app = express();
 dotenv.config();
 connectDB();
 
-const allowedOrigins = ['http://localhost:3000'];
+const allowedOrigins = [
+  'http://localhost:80',
+  'https://starlit-chebakia-3aae3a.netlify.app/'];
 const options = {
   origin: allowedOrigins
 }
@@ -31,5 +33,5 @@ app.use(notFound)
 app.use(errorHandler)
 
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 8080;
 app.listen(PORT, console.log(`server started on port ${PORT}`));
